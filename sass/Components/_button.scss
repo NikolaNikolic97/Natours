@@ -1,0 +1,75 @@
+.btn{
+&,
+&:link,
+&:visited{
+    padding: 1.5rem 4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10rem;
+    transition: all .2s;
+    cursor: pointer; 
+    font-size: $default-font-size;
+
+     //change for the <button> element
+     outline: none;
+     border: none;
+     cursor: pointer;
+}
+&--white{
+    margin-top:6rem;
+    color: $color-gray-light;
+    background: $color-white;
+    display: inline-block;
+    border-radius: 100px;
+}
+&--green{
+    color: $color-white;
+    background: $color-primary;
+    display: inline-block;
+    border-radius: 100px;
+}
+&:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black,0.2);
+}
+&:active{
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black,0.2);
+}
+&--animated{
+    animation: moveIn .5s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+&-logout{
+    position: absolute;
+    top: 6rem;
+    left: 20rem;
+    z-index: 100;
+    background-color: $color-gray-light-1;
+    color: $color-gray;
+}
+}
+.btn-text{
+    &:link,
+    &:visited{
+        color:$color-primary;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom:1px solid $color-primary;
+        padding: 1rem 2rem;
+        font-size: $default-font-size;
+        transition: all .2s;
+        
+       
+    }
+    &:hover{
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+    &:active{
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}

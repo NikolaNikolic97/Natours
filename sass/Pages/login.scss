@@ -1,0 +1,24 @@
+.login{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+.section-book{
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to right bottom, $color-primary-light , $color-primary-dark);
+}
+.book{
+    background-image:linear-gradient(105deg, rgba($color-white,0.75) 0%, rgba($color-white, 0.75) 50%, transparent 50% ), url("../img/natt-10.jpg");
+    background-size: cover;
+    height: 60rem;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba($color-black,.15);
+
+    &__form{
+        width: 50%;
+        padding: 6rem;
+        
+    }
+}
